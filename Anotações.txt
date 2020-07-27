@@ -1,0 +1,48 @@
+Webpack:
+	É um servidor para fazer o navegador carregar automaticamente quanto
+	colocar código novo, ele vai ajudar também quando todo arquivo JS feito
+	com ES6 for alterado automaticamente já ativar o babel para ele converter
+	esse arquivo em uma sintaxe que o nosso navegador entenda.
+	É um servidor de desenvolvimento para quando a gente usa JS utilizando essas
+	novas future do ES.
+=============================================================================================
+Baixar o Node.js e o yarn
+-------------------------------
+
+yarn add @babel/cli
+
+	Essa é uma dependencia, ela vai dar posibilidade para a gente trabalhar com
+	a interface de linha de comando do babel.
+	A linha de comando babel é que ele vai fornecer alguns comandos para nós usar
+	no terminal.
+------------
+yarn add @babel/preset-env
+
+	Ele vai entender qual que é o ambiente que a gente está trabalhando.
+	ele vai perceber que estamos trabalhando no navegador e ele vai converter as
+	future do ES6, ES7 e ES8 para o navegador que não entendem ainda
+------------
+yarn add @babel/core
+------------
+
+chamar no cmd -> 	yarn dev
+
+------------ BABEL:
+O Babel é um transcompilador JavaScript de código aberto e gratuito usado
+principalmente para converter o código ECMAScript 2015+ em uma versão compatível
+com versões anteriores do JavaScript que pode ser executada por mecanismos JavaScript
+mais antigos.
+============================================================================================
+				CONFIGURANDO BABEL
+
+
+
+
+
+
+
+
+
+
+
+
