@@ -1,0 +1,8 @@
+{
+  "name": "ES6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jonatasrmoura/ES6.git",
+  "author": "Jonatas Rosa Moura <jonatas.rmoura@outlook.com>",
+  "license": "MIT"
+}
