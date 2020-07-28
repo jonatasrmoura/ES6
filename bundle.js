@@ -1,33 +1,42 @@
 "use strict";
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+// ========= variáveis de Escopos ====================================
+function teste(x) {
+  var y = 2;
 
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+  if (x > 5) {
+    var _y = 4;
+    console.log(x, _y);
+  }
+}
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+teste(10); // ============= COSNTANTES ===========
+
+var usuario = {
+  nome: 'João'
+};
+usuario.nome = 'Diego';
+console.log(usuario); // ============== CLASSES ==============================================
 
 /* Ele já vai mostrar a soma porque o método é static ele não vai precisar
 definir uma nova classe Matematica e não depende de mais nenhuma informação
 da nossa classe */
-var Matematica = /*#__PURE__*/function () {
-  function Matematica() {
-    _classCallCheck(this, Matematica);
-  }
 
-  _createClass(Matematica, null, [{
-    key: "soma",
-    value: function soma(a, b) {
-      return a + b;
+/* 
+class Matematica {
+    static soma(a, b) {
+        return a+b;
     }
-  }]);
-
-  return Matematica;
-}();
+}
 
 console.log(Matematica.soma(1, 2));
 console.log(Matematica.soma(100, 900));
 console.log(Matematica.soma(50, 50));
 console.log(Matematica.soma(6, 4));
+
+ */
+// ===================================================================
+
 /* 
 // Herança JS
 class List {

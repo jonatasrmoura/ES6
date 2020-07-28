@@ -52,9 +52,23 @@ MÉTODOS ESTÁTICOS
 	restante da classe.
 	então quando ter uma método static dentro de uma classe, não vamos ter nem
 	constructor, ela vai ser uma classe só para ajudar nós a fazer alguma coisa.
+============================================================================================
+				CONST & LET
 
+Constantes e variáveis de Escopos
 
-
+Const
+	Const é só uma variável de leitura, não pode reatribuir um valor a uma variável.
+	Mas dá para multar uma variável com o Const.
+	A diferença entre reatribuir e multar uma variável.
+	Multar ao multação é quando nós trabalhamos com o mesmo formato do objeto com
+	as mesmas infórmações, porém a gente altera valores dentro desse objeto ou de 
+	um vetor.
+ex:
+	const usuario = {nome: 'João'};
+	usuario.nome = 'Diego';
+	console.log('usuario');
+	
 
 
 
