@@ -7,8 +7,8 @@ Webpack:
 	novas future do ES.
 =============================================================================================
 Baixar o Node.js e o yarn
--------------------------------
-
+---------------------------------------------------------------------------------------------
+				CONFIGURANDO BABEL
 yarn add @babel/cli
 
 	Essa é uma dependencia, ela vai dar posibilidade para a gente trabalhar com
@@ -33,10 +33,25 @@ principalmente para converter o código ECMAScript 2015+ em uma versão compatí
 com versões anteriores do JavaScript que pode ser executada por mecanismos JavaScript
 mais antigos.
 ============================================================================================
-				CONFIGURANDO BABEL
+			CLASSES
 
+Dentro da Classe nós podemos definir métodos.
 
+Herança JS:
+	
+super();
 
+	É básicamente a gente chmar o constructor da nossa classe pai, e dai podemos
+	criar nossas.
+
+MÉTODOS ESTÁTICOS
+	Quando eu defino o método static na minha classe, ele não encherga o restante
+	da classe, então ele não vai enchergar o que está dentro dele.
+	Todo vez que tiver esse método static, ele é básicamente para a gente passar
+	alguma informação para ele e ele retornar outra informação, independente do
+	restante da classe.
+	então quando ter uma método static dentro de uma classe, não vamos ter nem
+	constructor, ela vai ser uma classe só para ajudar nós a fazer alguma coisa.
 
 
 
