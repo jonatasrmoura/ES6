@@ -63,15 +63,40 @@ Const
 	A diferença entre reatribuir e multar uma variável.
 	Multar ao multação é quando nós trabalhamos com o mesmo formato do objeto com
 	as mesmas infórmações, porém a gente altera valores dentro desse objeto ou de 
-	um vetor.
+	um vetor. A multação é posivel dentro de uma constante.
 ex:
 	const usuario = {nome: 'João'};
 	usuario.nome = 'Diego';
 	console.log('usuario');
+---------------------------------
+
+Variáveis de Escopos == let
+	É usada dentro de métodos e só dentro desses métodos ela pode ser usada.
+=============================================================================================
+				Operadores em Array ES6
+
+
+map();
+
+	Serve para percorrer o vetor e retornar alguma coisa de dentro, retornar 
+	uma nova informação.
+	O map percorre todo nosso vetor cada intem dele e execulta a ação que a
+	gente precisa execulta
+
+
+reduce();
+
+	Básicamente uma forma da gente consumir todo nosso vetor e transformar em uma
+	única infórmação, única variável.
+
+filter();
+
+	ex: vamos supor que eu quero pegar todos os númros pares do meu vetor.
+	O bloco de código que nós temos dentro do Filter() a gente precisa
+	obrigatoriamente que ela return true ou false.
+
+find();
+
+	Usado para quando queremos verificar se existe alguma informação dentro do vetor
+	ou se a gente consegue encontrar essa informação dentro de vetor.
 	
-
-
-
-
-
-
