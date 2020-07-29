@@ -100,3 +100,34 @@ find();
 	Usado para quando queremos verificar se existe alguma informação dentro do vetor
 	ou se a gente consegue encontrar essa informação dentro de vetor.
 	
+===================================================================================================
+				ARROW FUNCTIONS
+
+	Quando o function não tem nome, quando ela só resebe um parâmetro e bloco de
+	código dela, mas ela não tem um nome ou sejá uma função anonima.
+	E esse é o melhor lugar para usar as arrow functions. Tem o mesmo funcionamento.
+
+	quando a função recebe um parâmetro pode tirar os parenteses e deixar o parâmetro
+	livre sem parenteses.
+
+	Quando a nossa função retorna simplesmente alguma informação, tipo na função
+	abaixo que retorna um parâmetro * 2, quando não são várias 
+	linhas(um corpo de função).
+ex:
+	const newArr = arr.map(item => {
+    	return item * 2;
+	});
+	console.log(newArr);
+	
+	Eu posso apagar tudo o return de dentro da função.
+
+ex de como que fica:
+
+	const newArr = arr.map(item => item * 2);
+	console.log(newArr);
+
+	A arrow function fica mais limpa usada em um ambiente de função anonima.
+
+	Se for usar uma function que recebe dois ou mais números dai não vale a pena usar 
+	arrow function.
+
