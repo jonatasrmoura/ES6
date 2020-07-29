@@ -1,4 +1,51 @@
 
+// Desestruturação de Objetos JS
+
+const usuario = {
+    nome: 'Jonatas',
+    idade: 20,
+    endereco: {
+        cidade: 'São José dos Campos',
+        estado: 'São Paulo',
+    },
+};
+
+console.log(usuario);
+/* 
+// Usando o conseito de Desestruturação ES6+ para buscar dados de usuários (menos código)
+const {
+    nome,
+    idade,
+
+    endereco: {
+        cidade, 
+        estado 
+    }
+} = usuario;
+
+console.log(nome);
+console.log(idade);
+console.log(cidade);
+ */
+
+function mostrarNome({nome}) {
+    console.log(nome);
+}
+
+mostrarNome(usuario);
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 // ============= Valores Padrão ==============
 function soma(a = 3, b = 6) {
     return a + b;
@@ -11,25 +58,7 @@ const subtrair = (a = 3, b = 6) => a - b;
 
 console.log(subtrair(1));
 console.log(subtrair());
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ */
 
 /* 
 // ========= Arrow Function =================

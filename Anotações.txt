@@ -148,11 +148,11 @@ const subtrair = (a = 3, b = 6) => a - b;
 
 Com essa aluna vi como abribuir valores padrão para funções no JS.
 ================================================================================================
+			Desestruturação de Objetos JS
 
 
-
-
-
+É possivel usar esse conseito de desestruturação em vários locais 
+tipo parâmetros de funções. 
 
 
 

@@ -1,24 +1,53 @@
 "use strict";
 
-// ============= Valores Padrão ==============
-function soma() {
-  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
-  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 6;
-  return a + b;
+// Desestruturação de Objetos JS
+var usuario = {
+  nome: 'Jonatas',
+  idade: 20,
+  endereco: {
+    cidade: 'São José dos Campos',
+    estado: 'São Paulo'
+  }
+};
+console.log(usuario);
+/* 
+// Usando o conseito de Desestruturação ES6+ para buscar dados de usuários (menos código)
+const {
+    nome,
+    idade,
+
+    endereco: {
+        cidade, 
+        estado 
+    }
+} = usuario;
+
+console.log(nome);
+console.log(idade);
+console.log(cidade);
+ */
+
+function mostrarNome(_ref) {
+  var nome = _ref.nome;
+  console.log(nome);
 }
 
-;
+mostrarNome(usuario);
+/* 
+// ============= Valores Padrão ==============
+function soma(a = 3, b = 6) {
+    return a + b;
+};
+
 console.log(soma(1));
 console.log(soma());
 
-var subtrair = function subtrair() {
-  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
-  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 6;
-  return a - b;
-};
+const subtrair = (a = 3, b = 6) => a - b;
 
 console.log(subtrair(1));
 console.log(subtrair());
+ */
+
 /* 
 // ========= Arrow Function =================
 const arr = [1, 3, 4, 5, 6]
