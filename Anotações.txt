@@ -130,4 +130,37 @@ ex de como que fica:
 
 	Se for usar uma function que recebe dois ou mais números dai não vale a pena usar 
 	arrow function.
+===============================================================================================
+				Valores Padrão
+
+Uma outra funcionalidade boa no EM6, tanto para funções quando para arrow functions
+é de colocar valores padrão para os parâmetros das funções.
+
+NAN
+	Mostra que ele não conseguiu identificar, retorna como se fosse um infinito
+	um número que não existe, porque ele não identificou os parâmetros para ele
+	rodar e exibir
+
+function soma(a=5, b=4){}
+	Conseguimos atribuir um valor para os dois parâmetros de soma(), assim não dando
+	o erro de NAN, também funciona com arrow function.
+const subtrair = (a = 3, b = 6) => a - b;
+
+Com essa aluna vi como abribuir valores padrão para funções no JS.
+================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

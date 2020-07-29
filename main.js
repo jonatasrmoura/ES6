@@ -1,4 +1,37 @@
 
+// ============= Valores Padrão ==============
+function soma(a = 3, b = 6) {
+    return a + b;
+};
+
+console.log(soma(1));
+console.log(soma());
+
+const subtrair = (a = 3, b = 6) => a - b;
+
+console.log(subtrair(1));
+console.log(subtrair());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 // ========= Arrow Function =================
 const arr = [1, 3, 4, 5, 6]
 
@@ -14,14 +47,7 @@ console.log(newArr);
 // Código polido com arrow function
 const teste = () => ({nome: 'João'});
 console.log(teste())
-
-
-
-
-
-
-
-
+ */
 
 /* 
 // ============= Operadores em Array =================
