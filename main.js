@@ -1,4 +1,18 @@
 
+//  ============ TEMPLEATE LITERAL ===============
+const nome = 'Diego';
+const idade = 23;
+
+// console.log('Meu nome é ' + nome + ' e tenho ' + idade + ' anos');
+
+console.log(`Meu nome é ${nome} e tenho ${idade} anos`);
+
+
+
+
+
+
+/* 
 // REST
 const usuario = {
     nome: 'Jonatas',
@@ -48,7 +62,7 @@ const usuario2 = {
     nome: 'João',
 };
 console.log(usuario2);
-
+ */
 
 /*
 // Desestruturação de Objetos JS

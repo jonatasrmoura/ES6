@@ -217,3 +217,21 @@ Uma outra utlização o SPREAD:
 
 ELES SÃO PARA MANIPULAR VALORES DENTRO DE VETORES E OBJETOS.
 ==============================================================================================
+				TEMPLEATE LITERAL
+
+	Que é uma forma de incluir variáveis dentro de Strings no JS a partir do ES6
+
+	const nome = 'Diego';
+	const idade = 23;
+
+	console.log(`Meu nome é ${nome} e tenho ${idade} anos`); // É isso.
+================================================================================================
+				OBJECT SHORT SYNTAX
+
+
+
+
+
+
+
+
