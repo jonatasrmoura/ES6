@@ -1,4 +1,56 @@
 
+// REST
+const usuario = {
+    nome: 'Jonatas',
+    idade: 20,
+    empresa: 'Seilá'
+};
+
+const { nome, ...resto } = usuario;
+
+console.log(nome);
+console.log(resto);
+
+// também pode ser inventada por vetores.
+const arr = [1, 2, 3, 4];
+
+const [ a, b, ...c ] = arr;
+
+console.log(arr);
+console.log(a);
+console.log(b);
+console.log(c);
+
+// Rest com function, as variáveis vão todas para o params
+function soma(a, b, ...params) {
+    return params;
+};
+console.log(soma(1, 3, 4));
+
+// --------- SPREAD ----
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+
+// únir esses dois Arrows (não precisa de função)
+const arr3 = [...arr1, ...arr2 ];
+console.log(arr3);
+
+// outra utilização do SPREAD
+const usuario1 = {
+    nome: 'Bruno',
+    idade: 14,
+    empresa: 'Intel é melhor',
+};
+
+// copiar tudo do Objeto acima, porém mudando um elemento dentro do Objeto usuario2.
+const usuario2 = {
+    ...usuario1,
+    nome: 'João',
+};
+console.log(usuario2);
+
+
+/*
 // Desestruturação de Objetos JS
 
 const usuario = {
@@ -11,7 +63,7 @@ const usuario = {
 };
 
 console.log(usuario);
-/* 
+
 // Usando o conseito de Desestruturação ES6+ para buscar dados de usuários (menos código)
 const {
     nome,
@@ -26,24 +78,14 @@ const {
 console.log(nome);
 console.log(idade);
 console.log(cidade);
- */
+ 
 
 function mostrarNome({nome}) {
     console.log(nome);
 }
 
 mostrarNome(usuario);
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 /* 
 // ============= Valores Padrão ==============

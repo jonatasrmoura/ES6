@@ -154,13 +154,66 @@ Com essa aluna vi como abribuir valores padrão para funções no JS.
 É possivel usar esse conseito de desestruturação em vários locais 
 tipo parâmetros de funções. 
 
+Usar o conseito de Desestruturação ES6+ dá para buscar dados de usuário, com OBJETO em JSON.
+não só usuários mas como qualquer objeto que queremos os dados.
+=================================================================================================
+			Operadores rest/spread
+
+Este operador é conhecido por usar  3 pontos(...) um do lado do outro.
+
+para usar eles precisamos instalar alguns pacotes, porque esses pacotes ainda não foram
+acropados para a versão principal do babel, precisamos instalar ele em formas de pluggin:
 
 
+yarn add @babel/plugin-proposal-object-rest-spread
 
+	vou adicionar esse nome do código de instalação detro do meu código, para colocar
+	ele dentro do .babelrc.
 
+	feito isso, depois vou cancelar no cmd aonde está rodando o yarn dev e execultar
+	de novo (para atualizar a alteração feita).
 
+REST
 
+	O Rest tem duas aplicação, ele serve para pegarmos restos das propriedades.
+	Os restos é básicamente quando eu quero pegar um dado tipo um nome dentro de
+	um objeto apenas e os resto dos parâmetros que estão dentro do Objeto eu quero colocar
+	dentro de outra variável.
+ex:
 
+const usuario = {
+    nome: 'Jonatas',
+    idade: 20,
+    empresa: 'Seilá'
+};
 
+const { nome, ...resto } = usuario;
 
+console.log(nome);
+console.log(resto); // aqui vai mostrar todos os outros parâmetros, menos o nome.
+---------------------------
+Res com vetores:
 
+// também pode ser inventada por vetores.
+const arr = [1, 2, 3, 4];
+
+const [ a, b, ...c ] = arr;
+
+console.log(arr);
+console.log(a);
+---------------------------
+Res com functions também são possiveis.
+----------=========
+	SPREAD
+
+	O SPREAD tem a funcionalidade díferente o Rest, enquanto o Rest pega o resto de
+	alguma Desestruturação, de uma pasada de parâmetros. O SPREAD ele faz o papel de
+	propagar de repasar as informações de algum Objeto ou de algum Vetor para outra
+	estrutura de dados.
+
+Uma outra utlização o SPREAD:
+	Quando ex: criar um novo Objeto de usuario com todos as propriedades de um já 
+	existente porém só quero trocar uma propriedade.
+
+ELES SÃO PARA MANIPULAR VALORES DENTRO DE VETORES E OBJETOS.
+==============================================================================================
